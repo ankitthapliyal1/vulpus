@@ -1,0 +1,55 @@
+<header>
+  <div class="container1">
+    <div class="row">
+      <div class="col-md-3 col-sm-3 col-3">
+        <div class="logo">
+          <img routerLink="" src="assets/img/logo.png" alt="Logo">
+        </div>
+      </div>
+      <div class="col-md-9 col-sm-9 col-9 text-end">
+
+        <div class="menu_icon" [class.menu_icon_Class]="menu_icon_variable" (click)="openMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
+        <div class="menu" [class.menuClass]="menuVariable">
+          <ul>
+            <li routerLinkActive="active" routerLink="home" (click)="close()">Home</li>
+            <li routerLinkActive="active" routerLink="games" (click)="close()">Games</li>
+            <li routerLinkActive="active" routerLink="store">Store</li>
+            <li routerLinkActive="active" routerLink="community" (click)="close()">Community</li>
+            <li class="mr"></li>
+            <li><img height="40" src="assets/img/search.png" alt="search"></li>
+            <li><img height="40" src="assets/img/cart.png" alt="cart"></li>
+            <li><img height="40" src="assets/img/msg.png" alt="msg"> </li>
+            <li>
+              <div class="d-flex">
+                <div><img height="40" src="assets/img/pic.png" alt=""></div> &nbsp;
+              <div><span>Manjay</span>
+                <div style="font-size: 10px; text-align: start;"> Gupta</div>
+              </div> &nbsp; <div><img class="mt-2" height="10" src="assets/img/down.png" alt=""></div>
+              </div>
+              <div class="sub-menu-1">
+                <ul>
+                  <li class="hover-me"><a>Profile</a> </li>
+                  <li class="hover-me"><a>LogOut </a> </li>
+
+                </ul>
+              </div>
+            </li>
+
+
+
+
+
+          </ul>
+        </div>
+
+
+
+      </div>
+    </div>
+  </div>
+</header>

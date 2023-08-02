@@ -1,0 +1,164 @@
+<div style="position: relative;">
+    <img width="100%" src="assets/img/dims.png" alt="">
+
+</div>
+
+<div class="one">
+    <img class="logowhite" src="assets/img/logoWhite.png" alt="">
+    <div class="searchbox mt-4">
+        <input type="text" class="search-input">
+        <img class="search" src="assets/img/Icon feather-search.png" alt="">
+    </div>
+</div>
+
+
+<div class="qq-container mt-4">
+    &nbsp;
+    <div class="row justify-content-between">
+        <div class="col-sm-6 col-md-6 col-12">
+            <div class="d-flex justify-content-between">
+                <h4> NEWS AND ANNOUNCEMENTS</h4>
+
+               <div> <button class="btnn">See All</button></div>
+            </div>
+
+            <div class="mt-4">
+                <img class="imgg" src="assets/img/Empires-and-Puzzles.png" alt="">
+            </div>
+
+            <div class="d-flex justify-content-between">
+                <div> Zynga To Acquire 'Empires & Puzzles' </div>
+                <div> 13.09.2020</div>
+            </div>
+
+
+            <div class="mt-4">
+                <p>
+                    Celebrate the classic that gave a rocket start to racing around the Mushroom Kingdom with the Super
+                    Mario Kart™ Tour—the latest limited-time event in the Mario Kart Tour game, happening now!
+                </p>
+            </div>
+
+            <div class="d-flex mt-4" *ngFor="let item of games">
+
+                <div>
+                    <img height="120" width="160" src="assets/img/{{item.img}}" alt="">
+                </div>
+                &nbsp; &nbsp;
+
+                <div class="mt-2">
+                    <div class="d-flex justify-content-between">
+                        <div>{{item.name}}</div>
+                        <div> 13.09.2020</div>
+                    </div>
+                    <p>
+                        {{item.desc}}
+                    </p>
+                </div>
+
+            </div>
+
+
+
+        </div>
+        &nbsp;
+        <div class="col-sm-5 col-md-5 col-12">
+            <div class="d-flex justify-content-between">
+                <h4>VULPES E-STORE</h4>
+               <div> <button class="btnn">See All</button></div>
+            </div>
+
+            <div class="mt-4">
+                <p>Celebrate the classic that gave a rocket start to racing around the Mushroom Kingdom with the Super
+                    Mario Kart™ Tour—the latest limited-time event in the Mario Kart Tour game, happening now! Collect
+                    Grand Stars and see if you can earn all the in-game rewards.
+                    <br> Mario Bros.™ game! Players who complete this mission will receive credit on Sept. 29
+                </p>
+            </div>
+
+            <div class="e-store row justify-content-between  ">
+                <div class="col-sm-12 col-md-6 col-12 mt-4" *ngFor="let item of e_store">
+                    <div class="mt-3">
+                        <img height="150" width="160" src="assets/img/{{item.img}}" alt="">
+                    </div>
+
+                    <div class="mt-4">
+                        {{item.name}}
+                        <p>Free online game</p>
+                        ${{item.price}}
+                        <p>Free online game</p>
+                    </div>
+
+                </div>
+
+            </div>
+            <div>
+                <div class="qq-gamebox">
+
+                    <div class="col-sm-5 col-12" style="position: relative;">
+                        <img class="qq-remote" width="320" src="assets/img/remote.png" alt="">
+                    </div>
+                    <div class="col-sm-7 col-12">
+                        <h2> Mario Games</h2>
+                        <p>
+                            Celebrate the classic start to racing around the Mushroom Kingdom with the Super Mario Kart™
+                            Tour
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="text-center mt-5">
+        <div class="qq-heading">Best Games</div>
+        <p>Drift into old-school fun with the Super Mario Kart Tour!</p>
+    </div>
+
+    <div class="slider-wrap">
+        <div class="lightDiv2 ">
+            <div class="box item " *ngFor="let item of bestGames">
+                <img height="200" class="qq-img" src="assets/img/{{item.img}}" alt="">
+                <h5>{{item.name}}</h5>
+                <p>147,681 travellers</p>
+            </div>
+
+
+        </div>
+        <div>
+            <div class="prev" type="button" appPrev> <img width="40" src="assets/img/pre.png" alt=""> </div>
+            <div class="next" type="button" appNext> <img width="40" src="assets/img/next.png" alt=""> </div>
+        </div>
+    </div>
+
+
+    <div class="text-center mt-5">
+        <div class="qq-heading">Best Games</div>
+        <p>Drift into old-school fun with the Super Mario Kart Tour!</p>
+    </div>
+
+   
+
+
+    <!-- <div class="col-sm-12">
+        <img class="imgg" src="assets/img/Group 136.png" alt="">
+    </div> -->
+
+
+    <div class="grid-container ">
+        <div class="item1"><img  src="assets/img/mobile-royale-1.png" alt=""></div>
+        <div class="item2"> <img  src="assets/img/Clash-Of-Clans.png" alt=""></div>
+        <div class="item3"> <img  src="assets/img/gun.png" alt=""></div>  
+         <div class="item4"><img  src="assets/img/maxresdefault.png" alt=""></div>
+        <div class="item5"><img  src="assets/img/Group 135.png" alt=""></div> 
+      </div>
+
+      
+
+
+    
+
+</div>

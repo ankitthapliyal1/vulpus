@@ -1,0 +1,204 @@
+<img width="100%" height="auto" src="assets/img/gamesbanner.png" alt="">
+
+
+<div class="qq-container">
+
+    <div class="text-center mt-2">
+        <div class="qq-heading">Featured Games</div>
+        <p>Drift into old-school fun with the Super Mario Kart Tour!</p>
+    </div>
+
+    <div class="qq-mt"></div>
+
+    <div class="slider-wrap ">
+        <div class="lightDiv2 ">
+            <div class="box item " *ngFor="let item of bestGames">
+                <img height="200" class="qq-img" src="assets/img/{{item.img}}" alt="">
+                <div class="d-flex justify-content-between">
+                    <h5>{{item.name}}</h5>
+                    <div><img src="assets/img/stars.png" alt=""></div>
+                </div>
+                <p>147,681 travellers</p>
+            </div>
+
+
+        </div>
+        <div>
+            <div class="prev" type="button" appPrev> <img width="40" src="assets/img/pre.png" alt=""> </div>
+            <div class="next" type="button" appNext> <img width="40" src="assets/img/next.png" alt=""> </div>
+        </div>
+    </div>
+
+    <div class="qq-mt"></div>
+
+    <div class="row justify-content-between mt-4">
+        <div class="col-sm-4">
+            <h4>FILTERS</h4>
+            <hr>
+            <div>
+
+                <ngb-accordion class="col-sm-8 m-2" *ngFor="let item of filter" #acc="ngbAccordion"
+                    [destroyOnHide]='false' [closeOthers]="true" activeIds="ngb-panel-0">
+                    <ngb-panel id="static-1" title="{{item}}">
+                        <ng-template ngbPanelContent>
+                            <div>
+                                <div class="d-flex justify-content-between qq-color">
+                                    <div> <img src="assets/img/tick.png" alt=""> &nbsp; Vulpes Games </div>
+                                    <div>50 </div>
+                                </div>
+                                <div class="d-flex justify-content-between qq-color1">
+                                    <div> <img src="assets/img/dash.png" alt=""> &nbsp; 3D Game </div>
+                                    <div> 150 </div>
+                                </div>
+                                <div class="d-flex justify-content-between qq-color1">
+                                    <div> <img src="assets/img/dash.png" alt=""> &nbsp; Casino </div>
+                                    <div> 53 </div>
+                                </div>
+                                <div class="d-flex justify-content-between qq-color1">
+                                    <div> <img src="assets/img/dash.png" alt=""> &nbsp; Saga OS </div>
+                                    <div> 151 </div>
+                                </div>
+                                <div class="d-flex justify-content-between qq-color">
+                                    <div> <img src="assets/img/tick.png" alt=""> &nbsp; iOS </div>
+                                    <div> 4 </div>
+                                </div>
+                                <div class="d-flex justify-content-between qq-color">
+                                    <div> <img src="assets/img/tick.png" alt=""> &nbsp; Android </div>
+                                    <div> 6 </div>
+                                </div>
+                            </div>
+                        </ng-template>
+                    </ngb-panel>
+
+                </ngb-accordion>
+
+
+
+            </div>
+        </div>
+        <div class="col-sm-8">
+            <h4>Rummy Game</h4>
+            <hr>
+            <div class="row qq-bestgames">
+                <div class="col-sm-6 col-md-4 col-lg-3 col-12 mt-4" *ngFor="let item of bestGames">
+                    <img height="150" width="150" src="assets/img/{{item.img}}" alt="">
+                    <div>{{item.name}}</div>
+                    <p>Free online game</p>
+                    <div>${{item.price}}</div>
+                </div> &nbsp;
+            </div>
+            <hr class="qq-mt5">
+
+            <div class="qq-color1">150 games</div>
+
+        </div>
+    </div>
+
+
+
+    <div class="row justify-content-between mt-4">
+
+        <div class="col-sm-8 qq-mt5">
+            <div class="card mt-4">
+                <div class="">
+                    <div class="qq-flex">
+                        <div>
+                            <img src="assets/img/clashofClans.png" alt="">
+                        </div>
+                        <div class="p-4">
+                            <div class="d-flex justify-content-between ">
+                                <h2>Clash of Clans</h2>
+                                <div class="qq-color">See Offers</div>
+                            </div>
+                            <b>AVAILABLE SEPTEMBER 29</b>
+                            <p class="mt-4">Celebrate the classic that gave a rocket start to racing around the Mushroom
+                                Kingdom with the Super Mario Kart™ Tour—the latest limited-time event in the Mario Kart
+                                Tour game, happening now! Collect Grand Stars and see if you can earn all the in-game
+                                rewards. Mario Bros.™ </p>
+                            <button class="btnn1">Pre-order Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="qq-mt5">
+                <div class="d-flex justify-content-between ">
+                    <h4> HOT CATEGORIES GAME ZONE </h4>
+                    <div class="qq-color">See ALl</div>
+                </div>
+
+                <hr>
+
+              <div class="row">
+                <div class=" col-md-6 col-lg-6 col-xl-4 col-12" *ngFor="let item of hotGames">
+                    <img height="180" width="220" src="assets/img/{{item.img}}" alt="">
+                    <div> Snooker and Poker Games</div>
+                    <p>Free online game</p>
+                    <div class="qq-color">
+                        129 games
+                    </div>
+                </div> &nbsp; &nbsp;
+              </div>
+
+            </div>
+        </div>
+
+        <div class="col-sm-4">
+
+            <h4 class="mt-2">VIEW HISTORY</h4>
+            <hr>
+            <div class="d-flex justify-content-between mt-4" *ngFor="let item of history">
+                <div class="d-flex">
+                    <img height="80" width="120" src="assets/img/{{item.img}}" alt="">
+                    &nbsp; &nbsp;
+                    <div>{{item.name}}
+                        <p>Free online game</p>
+                    </div>
+
+                </div>
+                <div> <img src="assets/img/cross.png" alt=""></div>
+            </div>
+
+
+            <div class="qq-mt5">
+                <h4>QUICK LINKS</h4>
+                <hr class="qq-mt">
+
+                <div class="mt-4">
+                    <div class="qq-color my-2"><b>3D games</b></div>
+                    <div class="my-2"><b>2D games</b></div>
+                    <div class="my-2"><b>Space Games</b></div>
+                    <div class="my-2"><b>Arcade Game</b></div>
+                    <div class="my-2"><b>Action Games</b></div>
+                </div>
+            </div>
+
+        </div>
+
+
+       
+
+
+
+    </div>
+
+
+
+    <div class="text-center qq-mt5">
+        <div class="qq-heading qq-mt5">
+            More Games Coming Soon
+        </div>
+        <p>Drift into old-school fun with the Super Mario Kart Tour!</p>
+
+       <div class="row">
+        <div class="col-sm-4 col-md-3 col-12 my-4" *ngFor="let item of logo">
+            <img src="assets/img/{{item.img}}" alt="">
+        </div>
+       </div>
+    </div>
+
+
+
+
+</div>

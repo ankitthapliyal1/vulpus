@@ -1,1 +1,93 @@
 /* You can add global styles to this file, and also import other style files */
+
+
+
+.qq-container{
+    width: 90%;
+    margin: auto;
+}
+
+.qq-color{
+    color: #FF6400;
+}
+.qq-color1{
+    color: #AAAAAA;
+}
+
+p{
+    color: #AAAAAA;
+}
+
+.qq-heading{
+    font-size: 35px;
+    font-weight: bolder;
+    color: #FF6400;
+}
+
+.btnn{
+    background-color: #fff;
+ border: 1px solid #FF6400;
+ border-radius: 8px;
+ color: #FF6400;
+ font-weight: 700;
+
+ padding: 10px 20px;
+}
+
+.btnn:hover{
+  background-color: #FF6400;
+  color: #fff;
+}
+
+.btnn1{
+    background-color: #FF6400;
+ border: 1px solid #FF6400;
+ border-radius: 8px;
+ color: #fff;
+ font-weight: 700;
+
+ padding: 10px 20px;
+}
+
+.card{
+    border-radius: 24px !important;
+    border: none !important;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px !important;
+
+}
+
+
+/* Importing Bootstrap SCSS file. */
+@import '~bootstrap/scss/bootstrap';
+
+
+.accordion {
+    --bs-accordion-color: #000;
+    --bs-accordion-bg: #fff;
+    --bs-accordion-border-color: #fff;
+    --bs-accordion-btn-icon: url("assets/img/up.png")
+  
+}
+
+.accordion-button{
+    font-weight: bold;
+}
+
+
+.accordion-button:focus {
+    border-radius: 0 !important;
+    box-shadow: none;
+    border-color: WHITE;
+    background-color: transparent;
+    color: #000;
+    border-radius: 0px;
+    border: none;
+   
+}
+
+
+.accordion-button:not(.collapsed)::after{
+    background-image:url("assets/img/up.png");
+}
+
+
